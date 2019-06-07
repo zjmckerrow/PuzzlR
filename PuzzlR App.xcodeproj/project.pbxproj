@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFA622AAB65400A4286A /* AppDelegate.swift */; };
+		D583EFA922AAB65400A4286A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFA822AAB65400A4286A /* ViewController.swift */; };
+		D583EFAC22AAB65400A4286A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D583EFAA22AAB65400A4286A /* Main.storyboard */; };
+		D583EFAE22AAB65700A4286A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D583EFAD22AAB65700A4286A /* Assets.xcassets */; };
+		D583EFB122AAB65700A4286A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D583EFAF22AAB65700A4286A /* LaunchScreen.storyboard */; };
+		D583EFBC22AAB65700A4286A /* PuzzlR_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFBB22AAB65700A4286A /* PuzzlR_AppTests.swift */; };
+		D583EFC722AAB65700A4286A /* PuzzlR_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFC622AAB65700A4286A /* PuzzlR_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D583EFB822AAB65700A4286A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D583EF9B22AAB65400A4286A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D583EFA222AAB65400A4286A;
+			remoteInfo = "PuzzlR App";
+		};
+		D583EFC322AAB65700A4286A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D583EF9B22AAB65400A4286A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D583EFA222AAB65400A4286A;
+			remoteInfo = "PuzzlR App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D583EFA322AAB65400A4286A /* PuzzlR App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PuzzlR App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D583EFA622AAB65400A4286A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D583EFA822AAB65400A4286A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D583EFAB22AAB65400A4286A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D583EFAD22AAB65700A4286A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D583EFB022AAB65700A4286A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D583EFB222AAB65700A4286A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D583EFB722AAB65700A4286A /* PuzzlR AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PuzzlR AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D583EFBB22AAB65700A4286A /* PuzzlR_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlR_AppTests.swift; sourceTree = "<group>"; };
+		D583EFBD22AAB65700A4286A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D583EFC222AAB65700A4286A /* PuzzlR AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PuzzlR AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D583EFC622AAB65700A4286A /* PuzzlR_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlR_AppUITests.swift; sourceTree = "<group>"; };
+		D583EFC822AAB65700A4286A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D583EFA022AAB65400A4286A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D583EFB422AAB65700A4286A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D583EFBF22AAB65700A4286A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D583EF9A22AAB65400A4286A = {
+			isa = PBXGroup;
+			children = (
+				D583EFA522AAB65400A4286A /* PuzzlR App */,
+				D583EFBA22AAB65700A4286A /* PuzzlR AppTests */,
+				D583EFC522AAB65700A4286A /* PuzzlR AppUITests */,
+				D583EFA422AAB65400A4286A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D583EFA422AAB65400A4286A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D583EFA322AAB65400A4286A /* PuzzlR App.app */,
+				D583EFB722AAB65700A4286A /* PuzzlR AppTests.xctest */,
+				D583EFC222AAB65700A4286A /* PuzzlR AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D583EFA522AAB65400A4286A /* PuzzlR App */ = {
+			isa = PBXGroup;
+			children = (
+				D583EFA622AAB65400A4286A /* AppDelegate.swift */,
+				D583EFA822AAB65400A4286A /* ViewController.swift */,
+				D583EFAA22AAB65400A4286A /* Main.storyboard */,
+				D583EFAD22AAB65700A4286A /* Assets.xcassets */,
+				D583EFAF22AAB65700A4286A /* LaunchScreen.storyboard */,
+				D583EFB222AAB65700A4286A /* Info.plist */,
+			);
+			path = "PuzzlR App";
+			sourceTree = "<group>";
+		};
+		D583EFBA22AAB65700A4286A /* PuzzlR AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D583EFBB22AAB65700A4286A /* PuzzlR_AppTests.swift */,
+				D583EFBD22AAB65700A4286A /* Info.plist */,
+			);
+			path = "PuzzlR AppTests";
+			sourceTree = "<group>";
+		};
+		D583EFC522AAB65700A4286A /* PuzzlR AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D583EFC622AAB65700A4286A /* PuzzlR_AppUITests.swift */,
+				D583EFC822AAB65700A4286A /* Info.plist */,
+			);
+			path = "PuzzlR AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D583EFA222AAB65400A4286A /* PuzzlR App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D583EFCB22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR App" */;
+			buildPhases = (
+				D583EF9F22AAB65400A4286A /* Sources */,
+				D583EFA022AAB65400A4286A /* Frameworks */,
+				D583EFA122AAB65400A4286A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PuzzlR App";
+			productName = "PuzzlR App";
+			productReference = D583EFA322AAB65400A4286A /* PuzzlR App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D583EFB622AAB65700A4286A /* PuzzlR AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D583EFCE22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR AppTests" */;
+			buildPhases = (
+				D583EFB322AAB65700A4286A /* Sources */,
+				D583EFB422AAB65700A4286A /* Frameworks */,
+				D583EFB522AAB65700A4286A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D583EFB922AAB65700A4286A /* PBXTargetDependency */,
+			);
+			name = "PuzzlR AppTests";
+			productName = "PuzzlR AppTests";
+			productReference = D583EFB722AAB65700A4286A /* PuzzlR AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D583EFC122AAB65700A4286A /* PuzzlR AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D583EFD122AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR AppUITests" */;
+			buildPhases = (
+				D583EFBE22AAB65700A4286A /* Sources */,
+				D583EFBF22AAB65700A4286A /* Frameworks */,
+				D583EFC022AAB65700A4286A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D583EFC422AAB65700A4286A /* PBXTargetDependency */,
+			);
+			name = "PuzzlR AppUITests";
+			productName = "PuzzlR AppUITests";
+			productReference = D583EFC222AAB65700A4286A /* PuzzlR AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D583EF9B22AAB65400A4286A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = PuzzlR;
+				TargetAttributes = {
+					D583EFA222AAB65400A4286A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D583EFB622AAB65700A4286A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D583EFA222AAB65400A4286A;
+					};
+					D583EFC122AAB65700A4286A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D583EFA222AAB65400A4286A;
+					};
+				};
+			};
+			buildConfigurationList = D583EF9E22AAB65400A4286A /* Build configuration list for PBXProject "PuzzlR App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D583EF9A22AAB65400A4286A;
+			productRefGroup = D583EFA422AAB65400A4286A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D583EFA222AAB65400A4286A /* PuzzlR App */,
+				D583EFB622AAB65700A4286A /* PuzzlR AppTests */,
+				D583EFC122AAB65700A4286A /* PuzzlR AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D583EFA122AAB65400A4286A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D583EFB122AAB65700A4286A /* LaunchScreen.storyboard in Resources */,
+				D583EFAE22AAB65700A4286A /* Assets.xcassets in Resources */,
+				D583EFAC22AAB65400A4286A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D583EFB522AAB65700A4286A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D583EFC022AAB65700A4286A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D583EF9F22AAB65400A4286A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D583EFA922AAB65400A4286A /* ViewController.swift in Sources */,
+				D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D583EFB322AAB65700A4286A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D583EFBC22AAB65700A4286A /* PuzzlR_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D583EFBE22AAB65700A4286A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D583EFC722AAB65700A4286A /* PuzzlR_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D583EFB922AAB65700A4286A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D583EFA222AAB65400A4286A /* PuzzlR App */;
+			targetProxy = D583EFB822AAB65700A4286A /* PBXContainerItemProxy */;
+		};
+		D583EFC422AAB65700A4286A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D583EFA222AAB65400A4286A /* PuzzlR App */;
+			targetProxy = D583EFC322AAB65700A4286A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D583EFAA22AAB65400A4286A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D583EFAB22AAB65400A4286A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D583EFAF22AAB65700A4286A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D583EFB022AAB65700A4286A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D583EFC922AAB65700A4286A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D583EFCA22AAB65700A4286A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D583EFCC22AAB65700A4286A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T44NVX2UFS;
+				INFOPLIST_FILE = "PuzzlR App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D583EFCD22AAB65700A4286A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T44NVX2UFS;
+				INFOPLIST_FILE = "PuzzlR App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D583EFCF22AAB65700A4286A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T44NVX2UFS;
+				INFOPLIST_FILE = "PuzzlR AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzlR App.app/PuzzlR App";
+			};
+			name = Debug;
+		};
+		D583EFD022AAB65700A4286A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T44NVX2UFS;
+				INFOPLIST_FILE = "PuzzlR AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzlR App.app/PuzzlR App";
+			};
+			name = Release;
+		};
+		D583EFD222AAB65700A4286A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T44NVX2UFS;
+				INFOPLIST_FILE = "PuzzlR AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PuzzlR App";
+			};
+			name = Debug;
+		};
+		D583EFD322AAB65700A4286A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T44NVX2UFS;
+				INFOPLIST_FILE = "PuzzlR AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PuzzlR App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D583EF9E22AAB65400A4286A /* Build configuration list for PBXProject "PuzzlR App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D583EFC922AAB65700A4286A /* Debug */,
+				D583EFCA22AAB65700A4286A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D583EFCB22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D583EFCC22AAB65700A4286A /* Debug */,
+				D583EFCD22AAB65700A4286A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D583EFCE22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D583EFCF22AAB65700A4286A /* Debug */,
+				D583EFD022AAB65700A4286A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D583EFD122AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D583EFD222AAB65700A4286A /* Debug */,
+				D583EFD322AAB65700A4286A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D583EF9B22AAB65400A4286A /* Project object */;
+}

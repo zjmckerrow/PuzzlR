@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2EB93F273119E82513DDA0 /* Pods_PuzzlR_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEBD32D4BB705EAB00BEF37 /* Pods_PuzzlR_App.framework */; };
+		8E1BA938229B17EBDDF376FC /* Pods_PuzzlR_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C28D0BA85120F7991EEC18 /* Pods_PuzzlR_AppTests.framework */; };
+		C679926B349C0D52C050CEF9 /* Pods_PuzzlR_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0BE696F1C8D609D5CCA9C85 /* Pods_PuzzlR_AppUITests.framework */; };
 		D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFA622AAB65400A4286A /* AppDelegate.swift */; };
 		D583EFA922AAB65400A4286A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFA822AAB65400A4286A /* ViewController.swift */; };
 		D583EFAC22AAB65400A4286A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D583EFAA22AAB65400A4286A /* Main.storyboard */; };
@@ -14,6 +17,9 @@
 		D583EFB122AAB65700A4286A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D583EFAF22AAB65700A4286A /* LaunchScreen.storyboard */; };
 		D583EFBC22AAB65700A4286A /* PuzzlR_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFBB22AAB65700A4286A /* PuzzlR_AppTests.swift */; };
 		D583EFC722AAB65700A4286A /* PuzzlR_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFC622AAB65700A4286A /* PuzzlR_AppUITests.swift */; };
+		D5E9EDD522B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
+		D5E9EDD622B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
+		D5E9EDD722B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +40,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D583EFA322AAB65400A4286A /* PuzzlR App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PuzzlR App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C28D0BA85120F7991EEC18 /* Pods_PuzzlR_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzlR_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		247FD31CC252FA406A19649B /* Pods-PuzzlR_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_App.release.xcconfig"; path = "Target Support Files/Pods-PuzzlR_App/Pods-PuzzlR_App.release.xcconfig"; sourceTree = "<group>"; };
+		7BD6C151B8B8E42CA8284BF0 /* Pods-PuzzlR_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-PuzzlR_AppTests/Pods-PuzzlR_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3FAE1D1BA6254F766BB40BB /* Pods-PuzzlR_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_AppTests.release.xcconfig"; path = "Target Support Files/Pods-PuzzlR_AppTests/Pods-PuzzlR_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADEBD32D4BB705EAB00BEF37 /* Pods_PuzzlR_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzlR_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BE696F1C8D609D5CCA9C85 /* Pods_PuzzlR_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzlR_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C0DB8BB01D3D2074934168 /* Pods-PuzzlR_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PuzzlR_AppUITests/Pods-PuzzlR_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3FD72C0365B54D04D3B659E /* Pods-PuzzlR_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-PuzzlR_AppUITests/Pods-PuzzlR_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D48E6956EF8C5B967C327A7E /* Pods-PuzzlR_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_App.debug.xcconfig"; path = "Target Support Files/Pods-PuzzlR_App/Pods-PuzzlR_App.debug.xcconfig"; sourceTree = "<group>"; };
+		D583EFA322AAB65400A4286A /* PuzzlR_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzlR_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D583EFA622AAB65400A4286A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D583EFA822AAB65400A4286A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D583EFAB22AAB65400A4286A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D583EFAD22AAB65700A4286A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D583EFB022AAB65700A4286A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D583EFB222AAB65700A4286A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D583EFB722AAB65700A4286A /* PuzzlR AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PuzzlR AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D583EFB722AAB65700A4286A /* PuzzlR_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzlR_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D583EFBB22AAB65700A4286A /* PuzzlR_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlR_AppTests.swift; sourceTree = "<group>"; };
 		D583EFBD22AAB65700A4286A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D583EFC222AAB65700A4286A /* PuzzlR AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PuzzlR AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D583EFC222AAB65700A4286A /* PuzzlR_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzlR_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D583EFC622AAB65700A4286A /* PuzzlR_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlR_AppUITests.swift; sourceTree = "<group>"; };
 		D583EFC822AAB65700A4286A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2EB93F273119E82513DDA0 /* Pods_PuzzlR_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1BA938229B17EBDDF376FC /* Pods_PuzzlR_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C679926B349C0D52C050CEF9 /* Pods_PuzzlR_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13839D40F1938731446B3DEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADEBD32D4BB705EAB00BEF37 /* Pods_PuzzlR_App.framework */,
+				18C28D0BA85120F7991EEC18 /* Pods_PuzzlR_AppTests.framework */,
+				B0BE696F1C8D609D5CCA9C85 /* Pods_PuzzlR_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D583EF9A22AAB65400A4286A = {
 			isa = PBXGroup;
 			children = (
@@ -81,15 +110,17 @@
 				D583EFBA22AAB65700A4286A /* PuzzlR AppTests */,
 				D583EFC522AAB65700A4286A /* PuzzlR AppUITests */,
 				D583EFA422AAB65400A4286A /* Products */,
+				D90EF986E79CE0BBE924DAE0 /* Pods */,
+				13839D40F1938731446B3DEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D583EFA422AAB65400A4286A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D583EFA322AAB65400A4286A /* PuzzlR App.app */,
-				D583EFB722AAB65700A4286A /* PuzzlR AppTests.xctest */,
-				D583EFC222AAB65700A4286A /* PuzzlR AppUITests.xctest */,
+				D583EFA322AAB65400A4286A /* PuzzlR_App.app */,
+				D583EFB722AAB65700A4286A /* PuzzlR_AppTests.xctest */,
+				D583EFC222AAB65700A4286A /* PuzzlR_AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +134,7 @@
 				D583EFAD22AAB65700A4286A /* Assets.xcassets */,
 				D583EFAF22AAB65700A4286A /* LaunchScreen.storyboard */,
 				D583EFB222AAB65700A4286A /* Info.plist */,
+				D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */,
 			);
 			path = "PuzzlR App";
 			sourceTree = "<group>";
@@ -125,30 +157,46 @@
 			path = "PuzzlR AppUITests";
 			sourceTree = "<group>";
 		};
+		D90EF986E79CE0BBE924DAE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D48E6956EF8C5B967C327A7E /* Pods-PuzzlR_App.debug.xcconfig */,
+				247FD31CC252FA406A19649B /* Pods-PuzzlR_App.release.xcconfig */,
+				7BD6C151B8B8E42CA8284BF0 /* Pods-PuzzlR_AppTests.debug.xcconfig */,
+				A3FAE1D1BA6254F766BB40BB /* Pods-PuzzlR_AppTests.release.xcconfig */,
+				B7C0DB8BB01D3D2074934168 /* Pods-PuzzlR_AppUITests.debug.xcconfig */,
+				D3FD72C0365B54D04D3B659E /* Pods-PuzzlR_AppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D583EFA222AAB65400A4286A /* PuzzlR App */ = {
+		D583EFA222AAB65400A4286A /* PuzzlR_App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D583EFCB22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR App" */;
+			buildConfigurationList = D583EFCB22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR_App" */;
 			buildPhases = (
+				403C5A8A12E7D110552CAC28 /* [CP] Check Pods Manifest.lock */,
 				D583EF9F22AAB65400A4286A /* Sources */,
 				D583EFA022AAB65400A4286A /* Frameworks */,
 				D583EFA122AAB65400A4286A /* Resources */,
+				595A454594A988E0C382AE15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "PuzzlR App";
+			name = PuzzlR_App;
 			productName = "PuzzlR App";
-			productReference = D583EFA322AAB65400A4286A /* PuzzlR App.app */;
+			productReference = D583EFA322AAB65400A4286A /* PuzzlR_App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D583EFB622AAB65700A4286A /* PuzzlR AppTests */ = {
+		D583EFB622AAB65700A4286A /* PuzzlR_AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D583EFCE22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR AppTests" */;
+			buildConfigurationList = D583EFCE22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR_AppTests" */;
 			buildPhases = (
+				07BCA33D5D35D364DFAF78B7 /* [CP] Check Pods Manifest.lock */,
 				D583EFB322AAB65700A4286A /* Sources */,
 				D583EFB422AAB65700A4286A /* Frameworks */,
 				D583EFB522AAB65700A4286A /* Resources */,
@@ -158,15 +206,16 @@
 			dependencies = (
 				D583EFB922AAB65700A4286A /* PBXTargetDependency */,
 			);
-			name = "PuzzlR AppTests";
+			name = PuzzlR_AppTests;
 			productName = "PuzzlR AppTests";
-			productReference = D583EFB722AAB65700A4286A /* PuzzlR AppTests.xctest */;
+			productReference = D583EFB722AAB65700A4286A /* PuzzlR_AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D583EFC122AAB65700A4286A /* PuzzlR AppUITests */ = {
+		D583EFC122AAB65700A4286A /* PuzzlR_AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D583EFD122AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR AppUITests" */;
+			buildConfigurationList = D583EFD122AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR_AppUITests" */;
 			buildPhases = (
+				0576A87A0E01DA20D6E84750 /* [CP] Check Pods Manifest.lock */,
 				D583EFBE22AAB65700A4286A /* Sources */,
 				D583EFBF22AAB65700A4286A /* Frameworks */,
 				D583EFC022AAB65700A4286A /* Resources */,
@@ -176,9 +225,9 @@
 			dependencies = (
 				D583EFC422AAB65700A4286A /* PBXTargetDependency */,
 			);
-			name = "PuzzlR AppUITests";
+			name = PuzzlR_AppUITests;
 			productName = "PuzzlR AppUITests";
-			productReference = D583EFC222AAB65700A4286A /* PuzzlR AppUITests.xctest */;
+			productReference = D583EFC222AAB65700A4286A /* PuzzlR_AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D583EF9E22AAB65400A4286A /* Build configuration list for PBXProject "PuzzlR App" */;
+			buildConfigurationList = D583EF9E22AAB65400A4286A /* Build configuration list for PBXProject "PuzzlR_App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +266,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D583EFA222AAB65400A4286A /* PuzzlR App */,
-				D583EFB622AAB65700A4286A /* PuzzlR AppTests */,
-				D583EFC122AAB65700A4286A /* PuzzlR AppUITests */,
+				D583EFA222AAB65400A4286A /* PuzzlR_App */,
+				D583EFB622AAB65700A4286A /* PuzzlR_AppTests */,
+				D583EFC122AAB65700A4286A /* PuzzlR_AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D583EFB122AAB65700A4286A /* LaunchScreen.storyboard in Resources */,
+				D5E9EDD522B3596D00445475 /* GoogleService-Info.plist in Resources */,
 				D583EFAE22AAB65700A4286A /* Assets.xcassets in Resources */,
 				D583EFAC22AAB65400A4286A /* Main.storyboard in Resources */,
 			);
@@ -239,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E9EDD622B3596D00445475 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +297,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E9EDD722B3596D00445475 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0576A87A0E01DA20D6E84750 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuzzlR_AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		07BCA33D5D35D364DFAF78B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuzzlR_AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		403C5A8A12E7D110552CAC28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuzzlR_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		595A454594A988E0C382AE15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzlR_App/Pods-PuzzlR_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzlR_App/Pods-PuzzlR_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuzzlR_App/Pods-PuzzlR_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D583EF9F22AAB65400A4286A /* Sources */ = {
@@ -282,12 +420,12 @@
 /* Begin PBXTargetDependency section */
 		D583EFB922AAB65700A4286A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D583EFA222AAB65400A4286A /* PuzzlR App */;
+			target = D583EFA222AAB65400A4286A /* PuzzlR_App */;
 			targetProxy = D583EFB822AAB65700A4286A /* PBXContainerItemProxy */;
 		};
 		D583EFC422AAB65700A4286A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D583EFA222AAB65400A4286A /* PuzzlR App */;
+			target = D583EFA222AAB65400A4286A /* PuzzlR_App */;
 			targetProxy = D583EFC322AAB65700A4286A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -430,6 +568,7 @@
 		};
 		D583EFCC22AAB65700A4286A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D48E6956EF8C5B967C327A7E /* Pods-PuzzlR_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +587,7 @@
 		};
 		D583EFCD22AAB65700A4286A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247FD31CC252FA406A19649B /* Pods-PuzzlR_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,7 +597,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.puzzlrapp.PuzzlR-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,6 +606,7 @@
 		};
 		D583EFCF22AAB65700A4286A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD6C151B8B8E42CA8284BF0 /* Pods-PuzzlR_AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -481,12 +622,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzlR App.app/PuzzlR App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzlR_App.app/PuzzlR_App";
 			};
 			name = Debug;
 		};
 		D583EFD022AAB65700A4286A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FAE1D1BA6254F766BB40BB /* Pods-PuzzlR_AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,12 +644,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzlR App.app/PuzzlR App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzlR_App.app/PuzzlR_App";
 			};
 			name = Release;
 		};
 		D583EFD222AAB65700A4286A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C0DB8BB01D3D2074934168 /* Pods-PuzzlR_AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +671,7 @@
 		};
 		D583EFD322AAB65700A4286A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FD72C0365B54D04D3B659E /* Pods-PuzzlR_AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -549,7 +693,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D583EF9E22AAB65400A4286A /* Build configuration list for PBXProject "PuzzlR App" */ = {
+		D583EF9E22AAB65400A4286A /* Build configuration list for PBXProject "PuzzlR_App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D583EFC922AAB65700A4286A /* Debug */,
@@ -558,7 +702,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D583EFCB22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR App" */ = {
+		D583EFCB22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR_App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D583EFCC22AAB65700A4286A /* Debug */,
@@ -567,7 +711,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D583EFCE22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR AppTests" */ = {
+		D583EFCE22AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR_AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D583EFCF22AAB65700A4286A /* Debug */,
@@ -576,7 +720,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D583EFD122AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR AppUITests" */ = {
+		D583EFD122AAB65700A4286A /* Build configuration list for PBXNativeTarget "PuzzlR_AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D583EFD222AAB65700A4286A /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PuzzlR App.xcodeproj">
+      location = "self:/Users/zmckerrow/Documents/XcodeProjects/PuzzlRApp/PuzzlR_App.xcodeproj">
    </FileRef>
 </Workspace>

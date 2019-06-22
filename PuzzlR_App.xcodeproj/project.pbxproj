@@ -13,6 +13,8 @@
 		D56D9B4A22BD4688008D30B9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D9B4922BD4688008D30B9 /* SignUpViewController.swift */; };
 		D56D9B4E22BDAF42008D30B9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D9B4D22BDAF42008D30B9 /* StartViewController.swift */; };
 		D56D9B5022BDD60B008D30B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D9B4F22BDD60B008D30B9 /* LoginViewController.swift */; };
+		D56D9B5222BDE177008D30B9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D9B5122BDE177008D30B9 /* HomeViewController.swift */; };
+		D56D9B5422BEB6A1008D30B9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D9B5322BEB6A1008D30B9 /* Post.swift */; };
 		D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFA622AAB65400A4286A /* AppDelegate.swift */; };
 		D583EFA922AAB65400A4286A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFA822AAB65400A4286A /* ViewController.swift */; };
 		D583EFAC22AAB65400A4286A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D583EFAA22AAB65400A4286A /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 		D56D9B4922BD4688008D30B9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D56D9B4D22BDAF42008D30B9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		D56D9B4F22BDD60B008D30B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D56D9B5122BDE177008D30B9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D56D9B5322BEB6A1008D30B9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D583EFA322AAB65400A4286A /* PuzzlR_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzlR_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D583EFA622AAB65400A4286A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D583EFA822AAB65400A4286A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				D56D9B4922BD4688008D30B9 /* SignUpViewController.swift */,
 				D56D9B4D22BDAF42008D30B9 /* StartViewController.swift */,
 				D56D9B4F22BDD60B008D30B9 /* LoginViewController.swift */,
+				D56D9B5122BDE177008D30B9 /* HomeViewController.swift */,
+				D56D9B5322BEB6A1008D30B9 /* Post.swift */,
 			);
 			path = "PuzzlR App";
 			sourceTree = "<group>";
@@ -408,6 +414,8 @@
 				D583EFA922AAB65400A4286A /* ViewController.swift in Sources */,
 				D56D9B5022BDD60B008D30B9 /* LoginViewController.swift in Sources */,
 				D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */,
+				D56D9B5422BEB6A1008D30B9 /* Post.swift in Sources */,
+				D56D9B5222BDE177008D30B9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

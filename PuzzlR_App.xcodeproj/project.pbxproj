@@ -10,6 +10,9 @@
 		1B2EB93F273119E82513DDA0 /* Pods_PuzzlR_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEBD32D4BB705EAB00BEF37 /* Pods_PuzzlR_App.framework */; };
 		8E1BA938229B17EBDDF376FC /* Pods_PuzzlR_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C28D0BA85120F7991EEC18 /* Pods_PuzzlR_AppTests.framework */; };
 		C679926B349C0D52C050CEF9 /* Pods_PuzzlR_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0BE696F1C8D609D5CCA9C85 /* Pods_PuzzlR_AppUITests.framework */; };
+		D56D9B4A22BD4688008D30B9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D9B4922BD4688008D30B9 /* SignUpViewController.swift */; };
+		D56D9B4E22BDAF42008D30B9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D9B4D22BDAF42008D30B9 /* StartViewController.swift */; };
+		D56D9B5022BDD60B008D30B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D9B4F22BDD60B008D30B9 /* LoginViewController.swift */; };
 		D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFA622AAB65400A4286A /* AppDelegate.swift */; };
 		D583EFA922AAB65400A4286A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFA822AAB65400A4286A /* ViewController.swift */; };
 		D583EFAC22AAB65400A4286A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D583EFAA22AAB65400A4286A /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 		B7C0DB8BB01D3D2074934168 /* Pods-PuzzlR_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PuzzlR_AppUITests/Pods-PuzzlR_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3FD72C0365B54D04D3B659E /* Pods-PuzzlR_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-PuzzlR_AppUITests/Pods-PuzzlR_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D48E6956EF8C5B967C327A7E /* Pods-PuzzlR_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlR_App.debug.xcconfig"; path = "Target Support Files/Pods-PuzzlR_App/Pods-PuzzlR_App.debug.xcconfig"; sourceTree = "<group>"; };
+		D56D9B4922BD4688008D30B9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D56D9B4D22BDAF42008D30B9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D56D9B4F22BDD60B008D30B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D583EFA322AAB65400A4286A /* PuzzlR_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzlR_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D583EFA622AAB65400A4286A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D583EFA822AAB65400A4286A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,9 @@
 				D583EFAF22AAB65700A4286A /* LaunchScreen.storyboard */,
 				D583EFB222AAB65700A4286A /* Info.plist */,
 				D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */,
+				D56D9B4922BD4688008D30B9 /* SignUpViewController.swift */,
+				D56D9B4D22BDAF42008D30B9 /* StartViewController.swift */,
+				D56D9B4F22BDD60B008D30B9 /* LoginViewController.swift */,
 			);
 			path = "PuzzlR App";
 			sourceTree = "<group>";
@@ -394,7 +403,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D56D9B4E22BDAF42008D30B9 /* StartViewController.swift in Sources */,
+				D56D9B4A22BD4688008D30B9 /* SignUpViewController.swift in Sources */,
 				D583EFA922AAB65400A4286A /* ViewController.swift in Sources */,
+				D56D9B5022BDD60B008D30B9 /* LoginViewController.swift in Sources */,
 				D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

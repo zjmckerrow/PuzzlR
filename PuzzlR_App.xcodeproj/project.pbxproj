@@ -24,6 +24,9 @@
 		D583EFB122AAB65700A4286A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D583EFAF22AAB65700A4286A /* LaunchScreen.storyboard */; };
 		D583EFBC22AAB65700A4286A /* PuzzlR_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFBB22AAB65700A4286A /* PuzzlR_AppTests.swift */; };
 		D583EFC722AAB65700A4286A /* PuzzlR_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583EFC622AAB65700A4286A /* PuzzlR_AppUITests.swift */; };
+		D5E363F722D25D2600BE1D9B /* ForYouCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E363F622D25D2600BE1D9B /* ForYouCollectionViewController.swift */; };
+		D5E363F922D25DFA00BE1D9B /* ForYouCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E363F822D25DFA00BE1D9B /* ForYouCell.swift */; };
+		D5E363FB22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E363FA22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift */; };
 		D5E9EDD522B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
 		D5E9EDD622B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
 		D5E9EDD722B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
@@ -76,6 +79,9 @@
 		D583EFC222AAB65700A4286A /* PuzzlR_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzlR_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D583EFC622AAB65700A4286A /* PuzzlR_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlR_AppUITests.swift; sourceTree = "<group>"; };
 		D583EFC822AAB65700A4286A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E363F622D25D2600BE1D9B /* ForYouCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouCollectionViewController.swift; sourceTree = "<group>"; };
+		D5E363F822D25DFA00BE1D9B /* ForYouCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouCell.swift; sourceTree = "<group>"; };
+		D5E363FA22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInfoSIgnUpViewController.swift; sourceTree = "<group>"; };
 		D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +162,9 @@
 				D568DC5622C938DF006A14EC /* NewsFeedViewController.swift */,
 				D568DC5C22C941F2006A14EC /* PostCellController.swift */,
 				D568DC5E22C945E5006A14EC /* Posts.swift */,
+				D5E363F622D25D2600BE1D9B /* ForYouCollectionViewController.swift */,
+				D5E363F822D25DFA00BE1D9B /* ForYouCell.swift */,
+				D5E363FA22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift */,
 			);
 			path = "PuzzlR App";
 			sourceTree = "<group>";
@@ -416,13 +425,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D56D9B4E22BDAF42008D30B9 /* StartViewController.swift in Sources */,
+				D5E363F922D25DFA00BE1D9B /* ForYouCell.swift in Sources */,
 				D56D9B4A22BD4688008D30B9 /* SignUpViewController.swift in Sources */,
 				D583EFA922AAB65400A4286A /* ViewController.swift in Sources */,
 				D56D9B5022BDD60B008D30B9 /* LoginViewController.swift in Sources */,
 				D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */,
+				D5E363FB22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift in Sources */,
 				D568DC5D22C941F2006A14EC /* PostCellController.swift in Sources */,
 				D56D9B5222BDE177008D30B9 /* HomeViewController.swift in Sources */,
 				D568DC5F22C945E5006A14EC /* Posts.swift in Sources */,
+				D5E363F722D25D2600BE1D9B /* ForYouCollectionViewController.swift in Sources */,
 				D568DC5722C938DF006A14EC /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

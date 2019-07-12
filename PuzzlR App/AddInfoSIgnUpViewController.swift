@@ -15,10 +15,15 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
     
     @IBOutlet weak var displayName: UITextField!
     @IBOutlet weak var displayImage: UIImageView!
+    var db : Firestore!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        let settings = FirestoreSettings()
+        Firestore.firestore().settings = settings
+        db = Firestore.firestore()
         
     }
     
@@ -62,12 +67,25 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
             if displayName.text != nil {
                 
                 changeRequest.displayName = displayName.text
+                changeRequest.commitChanges { (error) in
+                    
+                }
+                
+            }
+            if displayImage.image != nil {
+                
+                let userID = user.uid
+                db.collection("users").document(userID).setData([
+                
+                    "profile picture" : displayImage.image!
+                
+                ])
             
             }
-            
+            self.performSegue(withIdentifier: "infoToBio", sender: self)
+                
         }
     
     }
-    
     
 }

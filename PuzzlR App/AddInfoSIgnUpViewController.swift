@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import Firebase
-import FirebaseAuth
 
 class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     
@@ -32,7 +31,7 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
         let image = UIImagePickerController()
         image.delegate = self
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        image.allowsEditing = false
+        image.allowsEditing = true
         self.present(image, animated : true) {
             
             // After it is complete
@@ -41,16 +40,33 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
         
     }
     
+    internal func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+        var pickedImage : UIImage?
+        
+        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             
-            displayImage.image = image
+            pickedImage = editedImage
+            
+        }
+        else if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            
+            pickedImage = image
             
         }
         else {
             
             //Error message
+            
+        }
+        
+        if let selectedImage = pickedImage {
+            
+            displayImage.image = selectedImage
             
         }
         
@@ -63,9 +79,9 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
         let user = Auth.auth().currentUser
         if let user = user {
             
-            let changeRequest = user.createProfileChangeRequest()
             if displayName.text != nil {
                 
+                let changeRequest = user.createProfileChangeRequest()
                 changeRequest.displayName = displayName.text
                 changeRequest.commitChanges { (error) in
                     
@@ -75,12 +91,37 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
             if displayImage.image != nil {
                 
                 let userID = user.uid
-                db.collection("users").document(userID).setData([
+                let storage = Storage.storage()
+                let storageRef = storage.reference().child("images/\(userID)/profilePicture/profileImage.png")
+                if let uploadData = displayImage.image!.pngData() {
                 
-                    "profile picture" : displayImage.image!
+                    storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
+                        
+                        if error != nil {
+                            
+                            print(error!)
+                            return
+                            
+                        }
+                        
+                        storageRef.downloadURL(completion: { (url, error) in
+                            
+                            guard let downloadURl = url else {
+                                return
+                            }
+                            
+                            let changeRequest = user.createProfileChangeRequest()
+                            changeRequest.photoURL = downloadURl
+                            changeRequest.commitChanges { (error) in
+                                
+                            }
+                            
+                        })
+                        
+                    })
+                    
+                }
                 
-                ])
-            
             }
             self.performSegue(withIdentifier: "infoToBio", sender: self)
                 

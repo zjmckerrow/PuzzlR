@@ -538,7 +538,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepicture" translatesAutoresizingMaskIntoConstraints="NO" id="ZBs-ZL-p4z">
-                                            <rect key="frame" x="12" y="12" width="36" height="36.000000000000455"/>
+                                            <rect key="frame" x="12" y="12" width="36" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="8vK-DA-pR5"/>
                                                 <constraint firstAttribute="width" constant="36" id="wAE-NZ-gSu"/>

@@ -439,7 +439,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZwZ-de-FG2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.60650243189999997" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -510,7 +510,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uop-DD-1fs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -538,7 +547,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepicture" translatesAutoresizingMaskIntoConstraints="NO" id="ZBs-ZL-p4z">
-                                            <rect key="frame" x="12" y="12" width="36" height="36"/>
+                                            <rect key="frame" x="12" y="12" width="36" height="36.000000000000455"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="8vK-DA-pR5"/>
                                                 <constraint firstAttribute="width" constant="36" id="wAE-NZ-gSu"/>
@@ -690,9 +699,15 @@
                     <navigationItem key="navigationItem" id="1WV-ZH-vh2">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-name-filled-50-2" id="Frw-Tu-8EV">
                             <color key="tintColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="0q1-qJ-MPk" kind="show" id="csk-ak-1xb"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-notification-filled-50-2" id="j0a-ga-vC7">
                             <color key="tintColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="9fz-yf-LgG" kind="show" id="zI5-Wh-ZzK"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -711,6 +726,22 @@
             </objects>
             <point key="canvasLocation" x="5392.753623188406" y="-256.47321428571428"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="tdZ-jr-mvG">
+            <objects>
+                <viewController id="0q1-qJ-MPk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P7v-E9-NY8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2v0-4Q-1Ad"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MU2-Dz-gjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6558" y="-602"/>
+        </scene>
         <!--Plans-->
         <scene sceneID="T3a-Jg-74L">
             <objects>
@@ -720,7 +751,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HGj-Mb-VNj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.60650243189999997" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -760,6 +791,21 @@
             </objects>
             <point key="canvasLocation" x="5393" y="396"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4iX-vg-GPJ">
+            <objects>
+                <viewController id="9fz-yf-LgG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sza-cS-R0O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HSC-eW-HBr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTg-Lz-kUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6543" y="71"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icons8-add-50-2" width="25" height="25"/>
@@ -777,6 +823,6 @@
         <image name="taco-tuesday-poster-template-1e99fd3f23c6a0d7b14d057bd1cb648b" width="282" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dnB-ce-Dg2"/>
+        <segue reference="NAt-5b-m3b"/>
     </inferredMetricsTieBreakers>
 </document>

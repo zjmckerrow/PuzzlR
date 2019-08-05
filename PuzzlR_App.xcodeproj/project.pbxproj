@@ -30,6 +30,7 @@
 		D5E9EDD522B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
 		D5E9EDD622B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
 		D5E9EDD722B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
+		D5EBC83F22F8C68300C81381 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EBC83E22F8C68300C81381 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		D5E363F822D25DFA00BE1D9B /* ForYouCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouCell.swift; sourceTree = "<group>"; };
 		D5E363FA22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInfoSIgnUpViewController.swift; sourceTree = "<group>"; };
 		D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5EBC83E22F8C68300C81381 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				D5E363F622D25D2600BE1D9B /* ForYouCollectionViewController.swift */,
 				D5E363F822D25DFA00BE1D9B /* ForYouCell.swift */,
 				D5E363FA22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift */,
+				D5EBC83E22F8C68300C81381 /* SettingsController.swift */,
 			);
 			path = "PuzzlR App";
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D56D9B4E22BDAF42008D30B9 /* StartViewController.swift in Sources */,
+				D5EBC83F22F8C68300C81381 /* SettingsController.swift in Sources */,
 				D5E363F922D25DFA00BE1D9B /* ForYouCell.swift in Sources */,
 				D56D9B4A22BD4688008D30B9 /* SignUpViewController.swift in Sources */,
 				D583EFA922AAB65400A4286A /* ViewController.swift in Sources */,

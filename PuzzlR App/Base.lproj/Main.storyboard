@@ -151,6 +151,7 @@
                         <viewLayoutGuide key="safeArea" id="agL-ln-gqX"/>
                     </view>
                     <connections>
+                        <outlet property="email" destination="NCt-pw-w72" id="2fm-Ky-gsV"/>
                         <outlet property="loginButton" destination="Z9S-s7-DSl" id="ioe-lx-Hff"/>
                         <outlet property="password" destination="sWt-uv-Gxm" id="ZOy-Uf-dco"/>
                         <outlet property="username" destination="NCt-pw-w72" id="Qx4-OH-snw"/>
@@ -941,7 +942,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTg-Lz-kUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6543" y="71"/>
+            <point key="canvasLocation" x="6542.0289855072469" y="70.982142857142847"/>
         </scene>
     </scenes>
     <resources>

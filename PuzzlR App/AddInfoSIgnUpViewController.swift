@@ -91,11 +91,63 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
             if displayImage.image != nil {
                 
                 let userID = user.uid
-                let storage = Storage.storage()
-                let storageRef = storage.reference().child("images/\(userID)/profilePicture/profileImage.png")
-                if let uploadData = displayImage.image!.pngData() {
+                guard let image = displayImage.image, let data = image.pngData() else {
+                    
+                    let alertController = UIAlertController(title: "Error", message: "Something went wrong...", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    return
+                    
+                }
+                let imageName = UUID().uuidString
+                let imageRef = Storage.storage().reference().child("images/\(userID)/profileImage/\(imageName)")
+                imageRef.putData(data, metadata: nil) { (metadata, err) in
+                    if let err = err {
+                        
+                        let alertController = UIAlertController(title: "Error", message: err.localizedDescription, preferredStyle: .alert)
+                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+                        alertController.addAction(defaultAction)
+                        self.present(alertController, animated: true, completion: nil)
+                        return
+                        
+                    }
+                    
+                    imageRef.downloadURL(completion: { (url, error) in
+                        if let err = err {
+                            
+                            let alertController = UIAlertController(title: "Error", message: err.localizedDescription, preferredStyle: .alert)
+                            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+                            alertController.addAction(defaultAction)
+                            self.present(alertController, animated: true, completion: nil)
+                            return
+                            
+                        }
+                        
+                        guard let url = url else {
+                            
+                            let alertController = UIAlertController(title: "Error", message: "Something went wrong...", preferredStyle: .alert)
+                            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+                            alertController.addAction(defaultAction)
+                            self.present(alertController, animated: true, completion: nil)
+                            return
+                            
+                        }
+                        
+                        
+                    })
+                    
+                }
                 
-                    storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
+                
+                
+                
+                
+                  /*  let uploadTask = storageRef.putData(uploadData, metadata: nil) { (metadata, error) in
                         
                         if error != nil {
                             
@@ -119,14 +171,13 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
                         })
                         
                     })
-                    
-                }
                 
             }
+ 
             self.performSegue(withIdentifier: "infoToBio", sender: self)
-                
+       */
         }
-    
+ 
     }
     
 }

@@ -10,6 +10,7 @@ target 'PuzzlR_App' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'Kingfisher'
 
   target 'PuzzlR_AppTests' do
     inherit! :search_paths

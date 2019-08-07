@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Firebase
+import Kingfisher
 
 class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     
@@ -83,11 +84,14 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
                 
                 let changeRequest = user.createProfileChangeRequest()
                 changeRequest.displayName = displayName.text
-                changeRequest.commitChanges { (error) in
+                changeRequest.commitChanges(completion: { (error) in
                     
-                }
+                    return
+                    
+                })
                 
             }
+            
             if displayImage.image != nil {
                 
                 let userID = user.uid
@@ -101,6 +105,7 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
                     return
                     
                 }
+                
                 let imageName = UUID().uuidString
                 let imageRef = Storage.storage().reference().child("images/\(userID)/profileImage/\(imageName)")
                 imageRef.putData(data, metadata: nil) { (metadata, err) in
@@ -138,44 +143,22 @@ class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDeleg
                             
                         }
                         
+                        let changeRequest = user.createProfileChangeRequest()
+                        changeRequest.photoURL = url
+                        changeRequest.commitChanges(completion: { (error) in
+                            
+                            return
+                            
+                        })
                         
                     })
                     
                 }
                 
-                
-                
-                
-                
-                  /*  let uploadTask = storageRef.putData(uploadData, metadata: nil) { (metadata, error) in
-                        
-                        if error != nil {
-                            
-                            print(error!)
-                            return
-                            
-                        }
-                        
-                        storageRef.downloadURL(completion: { (url, error) in
-                            
-                            guard let downloadURl = url else {
-                                return
-                            }
-                            
-                            let changeRequest = user.createProfileChangeRequest()
-                            changeRequest.photoURL = downloadURl
-                            changeRequest.commitChanges { (error) in
-                                
-                            }
-                            
-                        })
-                        
-                    })
-                
             }
  
             self.performSegue(withIdentifier: "infoToBio", sender: self)
-       */
+                
         }
  
     }

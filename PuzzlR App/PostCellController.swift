@@ -23,9 +23,13 @@ class PostCellController: UITableViewCell {
     @IBOutlet weak var shareButton: UIButton!
     
     var post: Posts! {
+        
         didSet {
+            
             self.updateUI()
+            
         }
+        
     }
     
     func updateUI() {

@@ -30,6 +30,7 @@
 		D5E9EDD522B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
 		D5E9EDD622B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
 		D5E9EDD722B3596D00445475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */; };
+		D5EB950223008997005CD694 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EB950123008997005CD694 /* EditProfileViewController.swift */; };
 		D5EBC83F22F8C68300C81381 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EBC83E22F8C68300C81381 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		D5E363F822D25DFA00BE1D9B /* ForYouCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouCell.swift; sourceTree = "<group>"; };
 		D5E363FA22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInfoSIgnUpViewController.swift; sourceTree = "<group>"; };
 		D5E9EDD422B3596D00445475 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5EB950123008997005CD694 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		D5EBC83E22F8C68300C81381 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				D5E363F822D25DFA00BE1D9B /* ForYouCell.swift */,
 				D5E363FA22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift */,
 				D5EBC83E22F8C68300C81381 /* SettingsController.swift */,
+				D5EB950123008997005CD694 /* EditProfileViewController.swift */,
 			);
 			path = "PuzzlR App";
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				D56D9B4A22BD4688008D30B9 /* SignUpViewController.swift in Sources */,
 				D583EFA922AAB65400A4286A /* ViewController.swift in Sources */,
 				D56D9B5022BDD60B008D30B9 /* LoginViewController.swift in Sources */,
+				D5EB950223008997005CD694 /* EditProfileViewController.swift in Sources */,
 				D583EFA722AAB65400A4286A /* AppDelegate.swift in Sources */,
 				D5E363FB22D277FB00BE1D9B /* AddInfoSIgnUpViewController.swift in Sources */,
 				D568DC5D22C941F2006A14EC /* PostCellController.swift in Sources */,

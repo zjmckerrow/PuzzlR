@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 import Kingfisher
 
-class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
+class AddInfoSIgnUpViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var displayName: UITextField!
     @IBOutlet weak var displayImage: UIImageView!

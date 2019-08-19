@@ -551,7 +551,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepicture" translatesAutoresizingMaskIntoConstraints="NO" id="ZBs-ZL-p4z">
-                                            <rect key="frame" x="12" y="12" width="36" height="36"/>
+                                            <rect key="frame" x="12" y="12" width="36" height="36.000000000000455"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="8vK-DA-pR5"/>
                                                 <constraint firstAttribute="width" constant="36" id="wAE-NZ-gSu"/>
@@ -880,7 +880,7 @@
                                 <rect key="frame" x="21" y="331" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4o-h4-UbE">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4o-h4-UbE">
                                 <rect key="frame" x="136" y="365" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Profile Picture">
@@ -929,7 +929,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="5ZM-D3-Sow">
                                 <rect key="frame" x="0.0" y="129" width="414" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGt-Mw-6Hf">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGt-Mw-6Hf">
                                 <rect key="frame" x="111" y="265" width="192" height="30"/>
                                 <state key="normal" title="Change Background Picture">
                                     <color key="titleColor" red="0.60784313729999995" green="0.55634083759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -994,6 +994,8 @@
                         <outlet property="backgroundPictureImageView" destination="5ZM-D3-Sow" id="yct-Yi-ZOI"/>
                         <outlet property="bioLabel" destination="ioj-tE-PEq" id="wyn-a4-HPr"/>
                         <outlet property="cahngeBioTextView" destination="1uJ-qV-C2D" id="X8U-v6-nTK"/>
+                        <outlet property="changeBioTextView" destination="1uJ-qV-C2D" id="moC-sc-Tc9"/>
+                        <outlet property="changeDisplayNameTextField" destination="54K-nP-aFm" id="Svd-1L-pdc"/>
                         <outlet property="displayNameLabel" destination="wjk-zb-vzx" id="Cbu-Ga-Jbb"/>
                         <outlet property="profilePictureImageView" destination="4wg-h1-utn" id="eXL-j0-gQV"/>
                     </connections>

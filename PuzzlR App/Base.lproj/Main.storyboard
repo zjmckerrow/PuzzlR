@@ -544,7 +544,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepicture" translatesAutoresizingMaskIntoConstraints="NO" id="ZBs-ZL-p4z">
-                                            <rect key="frame" x="12" y="12" width="36" height="36"/>
+                                            <rect key="frame" x="12" y="12" width="36" height="36.000000000000455"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="8vK-DA-pR5"/>
                                                 <constraint firstAttribute="width" constant="36" id="wAE-NZ-gSu"/>
@@ -966,7 +966,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backgorund Picture:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxg-hd-9x1">
-                                <rect key="frame" x="12" y="56" width="168" height="21"/>
+                                <rect key="frame" x="12" y="100" width="168" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1080,7 +1080,6 @@
         <image name="profilepicture" width="877" height="1549"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="csk-ak-1xb"/>
         <segue reference="dyf-LO-wCe"/>
         <segue reference="ixL-VJ-nxy"/>
     </inferredMetricsTieBreakers>

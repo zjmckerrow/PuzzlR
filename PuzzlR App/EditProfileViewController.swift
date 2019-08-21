@@ -139,10 +139,12 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
     
     @IBAction func saveButtonTapped(_ sender: Any) {
         
-        
+        if let newDisplayName = changeDisplayNameTextField.text, !newDisplayName.isEmpty {
+            
+
+            
+        }
         
     }
-    
-    
     
 }

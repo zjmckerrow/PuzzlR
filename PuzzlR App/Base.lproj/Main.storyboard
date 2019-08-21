@@ -463,30 +463,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9iG-vL-dP7">
-                            <size key="itemSize" width="186" height="218"/>
+                            <size key="itemSize" width="414" height="238"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="H9r-7J-aFC">
+                            <rect key="frame" x="0.0" y="-88" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ForYouCell" id="Ccb-Pi-NKl" customClass="ForYouCell" customModule="PuzzlR_App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="186" height="218"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="186" height="218"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H9r-7J-aFC">
-                                            <rect key="frame" x="0.0" y="0.0" width="186" height="218"/>
-                                        </imageView>
-                                    </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="H9r-7J-aFC" secondAttribute="trailing" id="4fJ-Xk-T0X"/>
-                                    <constraint firstItem="H9r-7J-aFC" firstAttribute="leading" secondItem="Ccb-Pi-NKl" secondAttribute="leading" id="GlC-aq-126"/>
-                                    <constraint firstAttribute="bottom" secondItem="H9r-7J-aFC" secondAttribute="bottom" id="TVB-Uh-Ezh"/>
-                                    <constraint firstItem="H9r-7J-aFC" firstAttribute="top" secondItem="Ccb-Pi-NKl" secondAttribute="top" id="vOv-WS-zQK"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="companyImage" destination="H9r-7J-aFC" id="zHe-Xx-5Ni"/>
                                 </connections>
@@ -973,7 +966,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backgorund Picture:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxg-hd-9x1">
-                                <rect key="frame" x="12" y="100" width="168" height="21"/>
+                                <rect key="frame" x="12" y="56" width="168" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1087,6 +1080,7 @@
         <image name="profilepicture" width="877" height="1549"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="csk-ak-1xb"/>
         <segue reference="dyf-LO-wCe"/>
         <segue reference="ixL-VJ-nxy"/>
     </inferredMetricsTieBreakers>

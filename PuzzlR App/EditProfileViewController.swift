@@ -22,6 +22,7 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
     var db: Firestore!
     var imagePicker = UIImagePickerController()
     var imagePicked = 0
+    var currentUser = Auth.auth().currentUser
     
     override func viewDidLoad() {
         
@@ -34,8 +35,6 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
         let settings = FirestoreSettings()
         Firestore.firestore().settings = settings
         db = Firestore.firestore()
-        let currentUser = Auth.auth().currentUser
-        
         
         let profileImageURL = currentUser?.photoURL
         profilePictureImageView.kf.setImage(with: profileImageURL)
@@ -48,7 +47,7 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
     
     func readDatabase() {
         
-        let docRef = db.collection("users").document("\(String(describing: Auth.auth().currentUser?.uid))")
+        let docRef = db.collection("users").document("\(String(describing: currentUser?.uid))")
         
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
@@ -139,12 +138,158 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
     
     @IBAction func saveButtonTapped(_ sender: Any) {
         
+        changeDisplayName()
+        changeProfilePicture()
+        changeBackgroundPicture()
+        
+    }
+    
+    func changeDisplayName() {
+        
         if let newDisplayName = changeDisplayNameTextField.text, !newDisplayName.isEmpty {
             
-
+            let changeRequest = currentUser?.createProfileChangeRequest()
+            changeRequest?.displayName = newDisplayName
+            changeRequest?.commitChanges(completion: { (error) in
+                
+                print("Error : \(String(describing: error))")
+                
+            })
             
         }
         
+    }
+    
+    func changeProfilePicture() {
+        
+        guard let image = profilePictureImageView.image, let data = image.pngData() else {
+            
+            let alertController = UIAlertController(title: "Error", message: "Something went wrong updating your profile picture", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+            
+        }
+        
+        let imageName = UUID().uuidString
+        let imageRef = Storage.storage().reference().child("images/\(String(describing: currentUser?.uid))/profileImage/\(imageName)")
+        imageRef.putData(data, metadata: nil) {
+            (metadata, err) in
+            if let err = err {
+                
+                let alertController = UIAlertController(title: "Error", message: err.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+                return
+                
+            }
+            
+            imageRef.downloadURL(completion: { (url, error) in
+                if let error = error {
+                    
+                    let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    return
+                    
+                }
+                
+                guard let url = url else {
+                    
+                    let alertController =  UIAlertController(title: "Error", message: "Something went wrong...", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    return
+                    
+                }
+                
+                let changeRequest = self.currentUser?.createProfileChangeRequest()
+                changeRequest?.photoURL = url
+                
+                changeRequest?.commitChanges(completion: { (error) in
+                    
+                    return
+                    
+                })
+                
+            })
+            
+        }
+        
+    }
+    
+    func changeBackgroundPicture() {
+        
+        guard let image = backgroundPictureImageView.image, let data = image.pngData() else {
+            
+            let alertController = UIAlertController(title: "Error", message: "Something went wrong updating your background picture", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+            
+        }
+        
+        let imageName = UUID().uuidString
+        let imageRef = Storage.storage().reference().child("images/\(String(describing: currentUser?.uid))/backgroundImage/\(imageName)")
+        imageRef.putData(data, metadata: nil) {
+            (metadata, err) in
+            if let err = err {
+                
+                let alertController = UIAlertController(title: "Error", message: err.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+                return
+                
+            }
+            
+            imageRef.downloadURL(completion: { (url, error) in
+                if let error = error {
+                    
+                    let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    return
+                    
+                }
+                
+                guard let url = url else {
+                    
+                    let alertController =  UIAlertController(title: "Error", message: "Something went wrong...", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    return
+                    
+                }
+                
+                let urlString = url.absoluteString
+                let docRef = self.db.collection("users").document("\(String(describing: self.currentUser?.uid))")
+                
+                docRef.setData(<#T##documentData: [String : Any]##[String : Any]#>, completion: <#T##((Error?) -> Void)?##((Error?) -> Void)?##(Error?) -> Void#>)
+                
+                return
+                    
+                })
+                
+            })
+            
+        }
+    
     }
     
 }

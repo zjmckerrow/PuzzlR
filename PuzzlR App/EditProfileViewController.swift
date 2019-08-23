@@ -36,12 +36,16 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
         Firestore.firestore().settings = settings
         db = Firestore.firestore()
         
-        let profileImageURL = currentUser?.photoURL
-        profilePictureImageView.kf.setImage(with: profileImageURL)
+        if let currentUser = currentUser {
+            
+            let profileImageURL = currentUser.photoURL
+            profilePictureImageView.kf.setImage(with: profileImageURL)
+            
+            displayNameLabel.text = currentUser.displayName
+            
+            readDatabase()
         
-        displayNameLabel.text = currentUser?.displayName
-        
-        readDatabase()
+        }
         
     }
     
@@ -52,29 +56,28 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
                 
-                    let docData = document.data()
-                    let bio = docData!["bio"] as? String
-                    let backgroundPictureURLString = docData!["backgroundPictureURL"] as? String
-                    let backgroundPictureURL = URL(string: backgroundPictureURLString!)
+                let docData = document.data()
+                let bio = docData!["bio"] as? String
+                let backgroundPictureURLString = docData!["backgroundPictureURL"] as? String
+                let backgroundPictureURL = URL(string: backgroundPictureURLString!)
                 
-                    self.bioLabel.text = bio
+                self.bioLabel.text = bio
                 
-                    let resource = ImageResource(downloadURL: backgroundPictureURL!)
-                    self.backgroundPictureImageView.kf.setImage(with: resource, completionHandler: { (result) in
-                        switch result {
+                let resource = ImageResource(downloadURL: backgroundPictureURL!)
+                self.backgroundPictureImageView.kf.setImage(with: resource, completionHandler: { (result) in
+                    switch result {
                         
-                        case .success(_):
+                    case .success(_):
                         
-                            print("Success")
+                        print("Success")
                             
-                        case .failure(let error):
+                    case .failure(let error):
                             
-                            print("Error: \(error)")
+                        print("Error: \(error)")
                             
-                        }
+                    }
                             
-                    })
-                
+                })
                 
             }
             else {

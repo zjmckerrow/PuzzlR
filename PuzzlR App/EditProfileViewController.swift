@@ -52,11 +52,29 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
                 
-                let docData = document.data()
-                let bio = docData!["bio"] as? String
-                self.bioLabel.text = bio
-                let backgroundPictureURL = docData!["backgroundPictureURL"] as? URL
-                self.backgroundPictureImageView.kf.setImage(with: backgroundPictureURL)
+                    let docData = document.data()
+                    let bio = docData!["bio"] as? String
+                    let backgroundPictureURLString = docData!["backgroundPictureURL"] as? String
+                    let backgroundPictureURL = URL(string: backgroundPictureURLString!)
+                
+                    self.bioLabel.text = bio
+                
+                    let resource = ImageResource(downloadURL: backgroundPictureURL!)
+                    self.backgroundPictureImageView.kf.setImage(with: resource, completionHandler: { (result) in
+                        switch result {
+                        
+                        case .success(_):
+                        
+                            print("Success")
+                            
+                        case .failure(let error):
+                            
+                            print("Error: \(error)")
+                            
+                        }
+                            
+                    })
+                
                 
             }
             else {
@@ -216,7 +234,7 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
                 
                 changeRequest?.commitChanges(completion: { (error) in
                     
-                    return
+                return
                     
                 })
                 
@@ -241,6 +259,7 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
         
         let imageName = UUID().uuidString
         let imageRef = Storage.storage().reference().child("images/\(String(describing: currentUser?.uid))/backgroundImage/\(imageName)")
+        
         imageRef.putData(data, metadata: nil) {
             (metadata, err) in
             if let err = err {
@@ -254,7 +273,8 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
                 
             }
             
-            imageRef.downloadURL(completion: { (url, error) in
+            imageRef.downloadURL(completion: {
+                (url, error) in
                 if let error = error {
                     
                     let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
@@ -280,16 +300,32 @@ class EditProfileViewController : UIViewController, UINavigationControllerDelega
                 let urlString = url.absoluteString
                 let docRef = self.db.collection("users").document("\(String(describing: self.currentUser?.uid))")
                 
-                docRef.setData(<#T##documentData: [String : Any]##[String : Any]#>, completion: <#T##((Error?) -> Void)?##((Error?) -> Void)?##(Error?) -> Void#>)
+                docRef.updateData([
+                    
+                    "backgroundPictureURL" : urlString
+                    
+                ]) { err in
+                    if let err = err {
+                        
+                        print("Error updating document: \(err)")
+                        
+                    }
+                    else {
+                        
+                        print("Document successfully updated")
+                        
+                    }
+                
+                }
                 
                 return
-                    
-                })
                 
             })
             
         }
     
     }
-    
+
 }
+
+
